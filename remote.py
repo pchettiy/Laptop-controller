@@ -1,9 +1,11 @@
 import socket               # Import socket module
-import netifaces
+#import netifaces
+import os
 import subprocess
 
 s = socket.socket()         # Create a socket object
-host=netifaces.ifaddresses('wlan0')[netifaces.AF_INET][0]['addr']
+#host=netifaces.ifaddresses('wlan0')[netifaces.AF_INET][0]['addr']
+host = os.system("hostname -I")
 #host = socket.gethostname() # Get local machine name
 port = 12345                # Reserve a port for your service.
 s.bind((host, port))        # Bind to the port
