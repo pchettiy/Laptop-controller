@@ -118,4 +118,13 @@
         android:onClick="ok"
         android:src="@android:drawable/ic_menu_compass" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Apps:"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/imageButton16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

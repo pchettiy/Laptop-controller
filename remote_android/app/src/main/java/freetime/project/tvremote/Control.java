@@ -12,7 +12,7 @@ public class Control extends AppCompatActivity {
     String TAG="control";
     public String addr;
     ImageButton play_pause;
-    Boolean alternate=false;
+    Boolean alternate=true    ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +24,14 @@ public class Control extends AppCompatActivity {
         MyClientTask myClientTask=new MyClientTask(addr,12345,"01");
         myClientTask.execute();
         if(alternate){
-        play_pause.setImageResource(android.R.drawable.ic_media_play);}
+        play_pause.setImageResource(android.R.drawable.ic_media_play);
+        alternate=false;}
         else{
             play_pause.setImageResource(android.R.drawable.ic_media_pause);
+            alternate=true;
         }
        // Toast.makeText(Control.this, addr, Toast.LENGTH_SHORT).show();
         Log.d(TAG,"pause/play");
-        alternate=true;
 
     }
     public void fast5(View v){
