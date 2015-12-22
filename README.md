@@ -3,7 +3,7 @@
 <p><ul>
 <li>Run <code>ifconfig</code> in the terminal and type the IP address of wlan0 in the app</li>
 <li>Run the python script in background</li>
-<li>Install the apk from <a href="https://drive.google.com/file/d/0BxBZ2JTQjEw6bDh0dGNrSnZEQ2s/view?usp=docslist_api">here</a>.</li>
+<li>Install the apk from <a href="https://drive.google.com/file/d/0BxBZ2JTQjEw6dERBaTI2UTBNc1U/view?usp=docslist_api">here</a>.</li>
 <li>You should be able to use your phone as a remote</li>
 </ul></p>
 
