@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void proceed(View V){
         ip=iptext.getText().toString();
-        Intent intent=new Intent(this,Browse.class);
+        Intent intent=new Intent(this,MainScreen.class);
         intent.putExtra("ip",ip);
         startActivity(intent);
     }

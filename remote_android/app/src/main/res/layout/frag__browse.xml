@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="freetime.project.tvremote.Frag_Browse">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton10"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="back" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton11"
+        android:onClick="up"
+        android:src="@drawable/ic_keyboard_arrow_up_white_24dp"
+        android:layout_below="@+id/imageButton10"
+        android:layout_alignLeft="@+id/imageButton18"
+        android:layout_alignStart="@+id/imageButton18" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton12"
+        android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+        android:onClick="down"
+        android:layout_alignLeft="@+id/imageButton11"
+        android:layout_alignStart="@+id/imageButton11"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/imageButton14" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton13"
+        android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+        android:onClick="left"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignRight="@+id/imageButton10"
+        android:layout_alignEnd="@+id/imageButton10" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton14"
+        android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+        android:layout_alignTop="@+id/imageButton13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/button2"
+        android:layout_marginTop="87dp"
+        android:onClick="enter"
+        android:layout_below="@+id/imageButton11"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton15"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageButton14"
+        android:layout_alignStart="@+id/imageButton14"
+        android:onClick="exit"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton16"
+        android:src="@drawable/ic_chevron_left_white_24dp"
+        android:onClick="altleft"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton13"
+        android:layout_toEndOf="@+id/imageButton13" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton17"
+        android:src="@drawable/ic_chevron_right_white_24dp"
+        android:onClick="altright"
+        android:layout_alignTop="@+id/imageButton16"
+        android:layout_toLeftOf="@+id/imageButton14"
+        android:layout_toStartOf="@+id/imageButton14" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton18"
+        android:layout_alignBottom="@+id/imageButton16"
+        android:layout_centerHorizontal="true"
+        android:onClick="ok"
+        android:src="@android:drawable/ic_menu_compass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Apps:"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/imageButton16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

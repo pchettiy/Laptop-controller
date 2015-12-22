@@ -12,7 +12,7 @@ s.listen(5)                 # Now wait for client connection.
 while True:
    c, addr = s.accept()
    data=c.recv(2)
-   print data  
+   print data
    if(data=="01"):
    	subprocess.call(["xte", "key space"])
    #c.send('Thank you for connecting')
@@ -76,4 +76,8 @@ while True:
    	subprocess.call(["xte","keyup Shift_L"])
    elif(data=="19"):
    	subprocess.call(["xte","keyup Alt_L"])
-   c.close()      
+   elif(data=="20"):
+    subprocess.call(["xte","keydown Shift_L"])
+    subprocess.call(["xte","key F5"])
+    subprocess.call(["xte","keyup Shift_L"])
+   c.close()

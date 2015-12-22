@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Control" />
-        <activity android:name=".Browse"></activity>
+        <activity android:name=".Browse" />
+        <activity android:name=".MainScreen"></activity>
     </application>
 
 </manifest>
